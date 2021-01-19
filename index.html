@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="css/public.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>登陆-学生工作管理</title>
+</head>
+
+<body>
+ <script type="text/javascript">
+    window.onload = function showTime(){
+    var now=new Date(); 
+    var year=now.getFullYear(); 
+    var month=now.getMonth(); 
+    var date=now.getDate(); 
+    var day=now.getDay(); 
+    var hours=now.getHours();
+    var minutes=now.getMinutes();
+    var seconds=now.getSeconds();
+    var week;
+    month=month+1;
+    var arr_week=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+    week=arr_week[day]; 
+    document.all.show.innerHTML=year+"-"+month+"-"+date+"&nbsp;"+hours+":"+minutes+":"+seconds; 
+    var timeID=setTimeout(showTime,1000);
+}
+  </script>
+  <div class="top"></div>
+  <div class="width15 m0a"><img src="img/1.jpg" /></div>
+  <div class="tac lh30 c0 fs20 mt10">允许离校，学号：20180201670，<br/>姓名：李乙萍，当前时间<span id="show"></span></div>
+  
+</body>
+</html>
